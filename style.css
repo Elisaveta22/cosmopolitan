@@ -1,0 +1,213 @@
+@font-face {
+  font-family: "FuturaStd Medium";
+
+  src: url(/myfonts/FuturaStdLight.otf);
+}
+
+@font-face {
+  font-family: "FuturaStd Bold";
+
+  src: url(/myfonts/FuturaStdBook.otf);
+}
+
+@font-face {
+  font-family: "DINCondensed";
+
+  src: url(/FONTS/Futura/FUB_____.TTF);
+}
+
+@font-face {
+  font-family: "AzoSans Light";
+
+  src: url(/myfonts/AzoSans-Light.ttf);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: url(/images/background.png) no-repeat no-repeat;
+  background-position: right 0%;
+  background-size: 30%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /*margin-top: 25%;*/
+}
+
+.logo-img {
+  height: 20px;
+}
+
+h2 {
+  margin-top: 25px;
+  color: #f767b4;
+  font-family: "FuturaStd Bold";
+  margin-bottom: 5px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+/*gradient from #ff8665 to #ff8bc9*/
+.frame {
+  background: linear-gradient(to right, #ff8665, #ff8bc9);
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid linear-gradient(to right, #ff8665, #ff8bc9);
+  box-sizing: border-box;
+}
+
+.frame h1 {
+  margin: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: "FuturaStd Bold";
+  font-size: 2.2em;
+  letter-spacing: 4px;
+}
+
+.arrows {
+  display: none;
+}
+
+p {
+  margin: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-align: center;
+}
+
+.input-container {
+  height: 25px;
+  width: 400px;
+  padding: 2px;
+  border: 2px solid #f767b4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.email-logo {
+  height: 60%;
+  margin-left: 6px;
+  margin-right: 5px;
+}
+
+.email-input {
+  border: unset;
+  width: 27vw;
+  box-sizing: border-box;
+}
+
+.email-input:focus,
+.email-input:hover {
+  border: unset;
+  outline: none;
+}
+
+.button-frame {
+  background: #f767b4;
+  margin-top: 2vh;
+}
+
+button {
+  color: #fff;
+  font-size: 1.4em;
+  font-family: "FuturaStd Bold";
+  background: #f767b4;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  margin: 7px;
+  padding: 8px;
+}
+
+a {
+  margin-top: 2vh;
+  font-size: 1.1em;
+  color: #333;
+  font-style: italic;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background: url(/images/BG-Images.png) no-repeat no-repeat;
+    background-size: cover;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  .frame {
+    display: flex;
+    justify-content: center;
+    width: 94vw;
+  }
+
+  .frame h1 {
+    font-size: 1.3em;
+  }
+
+  h1 {
+    font-size: 1.7em;
+    align-self: center;
+  }
+
+  .arrows {
+    height: 30px;
+    margin-bottom: 10px;
+    width: auto;
+    display: block;
+  }
+
+  .arrows p {
+    margin: -9px;
+    transform: rotate(90deg);
+    font-family: "AzoSans";
+    color: #fda041;
+    font-weight: 900;
+    font-style: bold;
+    font-size: 2em;
+  }
+  p {
+    margin-top: 20vh;
+  }
+
+  .input-container {
+    background: #fff;
+    border: 2px solid #f767b4;
+    height: 35px;
+    width: 98vw;
+    box-sizing: border-box;
+  }
+
+  .button-frame {
+    display: flex;
+    width: 99vw;
+  }
+
+  button {
+    width: 100%;
+    margin: 1.5vw;
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-size: 40%;
+  }
+}
